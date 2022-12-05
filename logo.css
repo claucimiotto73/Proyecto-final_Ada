@@ -1,0 +1,274 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nerko One', sans-serif;
+}
+body{
+    background: radial-gradient(rgb(255, 0, 60) 5%, yellow 25%, #5eff1e 50%);
+       height: 100%;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+}
+.logo{
+    display: flex;
+    height: 190px;
+    width: 70%;
+    margin: 150px;
+    max-width: 2200px;
+    max-height: 2500px;
+    background: linear-gradient(180deg,#e4f373,#369101);
+    border-radius: 0% 300%;
+    box-shadow: 5px 9px 5px 10px #79f532, 4px 2px 12px 5px rgb(203, 238, 5);
+   
+}
+
+.container_img{
+    max-width: 900px;
+    margin-top: 0px;
+    perspective: 1000px;
+    width: 100%;
+    height: 180%;
+    padding: 0;
+}
+
+
+.img_fader{
+    margin: 2%;
+    position: relative;
+ 
+}
+
+
+.img_fader:hover .img{
+    transform: rotateY(180deg);
+
+}
+.img{
+   display: flex;
+   align-items: center;
+    width: 290px;
+    height: 350px;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+    box-shadow: 20px 60px 60px 30px  #edf905;
+}
+
+
+.img_front{
+    background-size: cover;
+    background-position: center;
+}
+
+.img_front,
+.img_back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+
+.img_back{
+    transform: rotateY(180deg);
+    background-image: url('css.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.body_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+.body_back{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateZ(60px);
+}
+.body_front h2{
+    margin-top: 30px;
+    font-size: 25px;
+    left: 18%;
+    top: -70px;
+    position: relative;
+}
+.body_back h2{
+    margin-top: 15px;
+    margin-right: -70px;
+    font-size: 20px;
+    left: 45%;
+    top: 30px;
+    position: relative;
+
+}
+.body_back_button a{
+    margin-top: 320px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none; 
+    color: black;
+    background: #ecf3b8;
+    box-shadow: 1px 1px 30px 5px  #5eff1e;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+    display: block;
+    margin-right: 150px;
+    width: 60%; 
+}
+
+.body_back a:hover{
+    background:  #a0fc02;
+}
+/* burbujas*/
+
+.burbujas div{
+    border-radius: 50%;
+    background: rgb(242, 250, 2) 60%;
+    opacity: .7;
+    position: absolute;
+    bottom: -150;
+    animation: burbujas 2s linear infinite;
+ }
+
+.burbujas div:nth-child(1){
+    width: 100px;
+    height: 100px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbujas div:nth-child(2){
+    width: 110px;
+    height: 110px;
+    left: 6%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbujas div:nth-child(3){
+    width: 150px;
+    height: 150px;
+    left: 3%;
+    animation-duration: 3s;
+    animation-delay: 8s;
+}
+
+.burbujas div:nth-child(4){
+    width: 180px;
+    height: 180px;
+    left: 8%;
+    animation-duration: 6s;
+    animation-delay: 5s;
+}
+
+.burbujas div:nth-child(5){
+    width: 90px;
+    height: 90px;
+    left: 9%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbujas div:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 10%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbujas div:nth-child(7){
+    width: 70px;
+    height: 70px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbujas div:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbujas div:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 52%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbujas div:nth-child(10){
+    width: 140px;
+    height: 140px;
+    left: 0%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}  
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;   
+    }
+    30%{
+        transform: translateX(100px);
+    }
+    50%{
+        opacity: .8;
+
+    }
+    100%{
+        bottom: 100vh;
+        opacity:0;
+    }
+        } 
+    
+@keyframes movimiento{
+     
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+ }
+
